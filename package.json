@@ -1,0 +1,58 @@
+{
+  "name": "devblog",
+  "description": "GatsbyJS blog template for developers",
+  "version": "1.0.0",
+  "author": "Ryan Fitzgerald <ryanfitzgeralddev@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/ryanfitzgerald/devblog/issues"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.5.1",
+    "gatsby": "^1.8.12",
+    "gatsby-link": "^1.6.8",
+    "gatsby-paginate": "^1.0.16",
+    "gatsby-plugin-google-analytics": "^1.0.4",
+    "gatsby-plugin-manifest": "^1.0.4",
+    "gatsby-plugin-offline": "^1.0.4",
+    "gatsby-plugin-preact": "^1.0.3",
+    "gatsby-plugin-react-helmet": "^1.0.3",
+    "gatsby-plugin-sharp": "^1.6.2",
+    "gatsby-plugin-styled-components": "^2.0.11",
+    "gatsby-remark-copy-linked-files": "^1.5.2",
+    "gatsby-remark-images": "^1.5.4",
+    "gatsby-remark-prismjs": "^1.2.1",
+    "gatsby-remark-responsive-iframe": "^1.4.3",
+    "gatsby-remark-smartypants": "^1.4.3",
+    "gatsby-source-filesystem": "^1.4.3",
+    "gatsby-transformer-remark": "^1.7.1",
+    "gatsby-transformer-sharp": "^1.6.1",
+    "lodash": "^4.15.0",
+    "styled-components": "^3.3.3",
+    "styled-normalize": "^8.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0",
+    "prettier": "^1.6.1"
+  },
+  "homepage": "https://github.com/ryanfitzgerald/devblog#readme",
+  "keywords": [
+    "gatsby",
+    "dev",
+    "blog",
+    "dev blog"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanfitzgerald/devblog.git"
+  },
+  "scripts": {
+    "dev": "gatsby develop",
+    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  }
+}
