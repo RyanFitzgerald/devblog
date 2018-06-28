@@ -1,7 +1,9 @@
+const userConfig = require('./config');
+
 module.exports = {
   siteMetadata: {
-    title: "Dev Blog",
-    author: "Ryan Fitzgerald"
+    title: userConfig.title,
+    author: userConfig.author,
   },
   plugins: [
     {
@@ -21,7 +23,7 @@ module.exports = {
             options: {
               maxWidth: 700,
               linkImagesToOriginal: false,
-              wrapperStyle: 'margin: 30px 0'
+              wrapperStyle: 'margin: 15px -30px !important'
             },
           },
           {

@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Header() {
+function Header({ meta }) {
   return (
-    <div>
-        Header
-    </div>
+    <header>
+      Header here
+    </header>
   );
 }
 

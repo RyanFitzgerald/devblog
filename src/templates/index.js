@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Helmet from 'react-helmet';
-import Link from "gatsby-link";
 
-import Article from '../components/Article';
+import Card from '../components/Card';
+import Container from '../components/Container';
 import Summary from '../components/Summary';
 import Pagination from '../components/Pagination';
  
@@ -12,10 +12,9 @@ const IndexPage = ({ data, pathContext }) => {
   const nextUrl = (index + 1).toString();
 
   return (
-    <section>
-      <Helmet title="Dev Blog | Ryan Fitzgerald" />
+    <Container>
       {group.map(({ node }) => (
-        <Article>
+        <Card>
           <Summary 
             key={node.frontmatter.path}
             date={node.frontmatter.date}
@@ -23,7 +22,7 @@ const IndexPage = ({ data, pathContext }) => {
             excerpt={node.excerpt}
             slug={node.fields.slug}
           />
-        </Article>
+        </Card>
       ))}
       <Pagination 
         isFirst={index === 1}
@@ -31,7 +30,7 @@ const IndexPage = ({ data, pathContext }) => {
         nextUrl={nextUrl}
         previousUrl={previousUrl}
       />
-    </section>
+    </Container>
   );
 };
 export default IndexPage;
