@@ -14,9 +14,14 @@ import Button from '../components/Button';
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const author = get(this.props, 'data.site.siteMetadata.author')
+    const post = this.props.data.markdownRemark;
+    const author = get(this.props, 'data.site.siteMetadata.author');
     const { previous, next } = this.props.pathContext;
+   
+    let url = '';
+    if (typeof window !== `undefined`) {
+      url = window.location.href;
+    }
 
     return (
       <Container>
@@ -34,7 +39,7 @@ class BlogPostTemplate extends React.Component {
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </Article>
           {userConfig.showShareButtons && (
-            <Share url={window.location.href} title={post.frontmatter.title} />
+            <Share url={url} title={post.frontmatter.title} />
           )}
         </Card>
         
