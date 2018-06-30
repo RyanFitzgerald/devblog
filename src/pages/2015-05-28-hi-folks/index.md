@@ -105,6 +105,12 @@ subline of her own road, the Line Lane. Pityful a rethoric question
 ran over her cheek, then she continued her way. On her way she met a
 copy.
 
+```javascript
+$(document).ready(function() {
+    console.log('here')
+})
+```
+
 ###### Slapped cozy a that lightheartedly and far
 
 The copy warned the Little Blind Text, that where it came from it

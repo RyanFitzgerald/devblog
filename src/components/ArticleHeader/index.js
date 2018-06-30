@@ -18,12 +18,6 @@ const PostHeader = styled.div`
     text-align: center;
   }
 
-  > div {
-    margin: 0 -90px;
-    margin-top: -65px;
-    margin-bottom: 50px;
-  }
-
   span {
     background: #9c9da3;
     display: block;

@@ -2,15 +2,17 @@ import styled from 'styled-components';
 import Link from 'gatsby-link';
 
 const Button = styled(Link)`
-  border: 1px solid #000;
+  border: 1px solid #bfc8d2;
   border-radius: 25px;
-  color: #000;
+  color: #3e465b;
   display: inline-block;
-  font-size: 0.75em;
+  font-size: 10px;
   font-weight: 700;
-  padding: 5px 25px;
+  margin: 0 10px;
+  padding: 5px 15px;
   text-decoration: none;
   text-transform: uppercase;
+
   &:hover {
     border-color: #000;
   }

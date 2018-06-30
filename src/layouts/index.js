@@ -1,6 +1,7 @@
 import React from 'react';
 import '../global-styles';
-import config from '../../config';
+import userConfig from '../../config';
+import 'prismjs/themes/prism.css';
 
 import Header from '../components/Header';
 
@@ -9,7 +10,7 @@ class Template extends React.Component {
     const { location, children } = this.props
     return (
       <div>
-        <Header config={config}/>
+        <Header config={userConfig}/>
         {children()}
       </div>
     )

@@ -25,4 +25,20 @@ injectGlobal`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  img {
+    max-width: 100%;
+  }
+
+  .gatsby-highlight {
+    border-bottom: 1px solid #e0e6ed;
+    border-top: 1px solid #e0e6ed;
+    margin: 15px -100px;
+    padding: 0;
+
+    pre[class*="language-"] {
+      margin: 0;
+      padding: 25px 100px;
+    }
+  }
 `;

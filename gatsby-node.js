@@ -1,8 +1,9 @@
-const _ = require('lodash')
-const Promise = require('bluebird')
-const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
-const createPaginatedPages = require("gatsby-paginate");
+const _ = require('lodash');
+const Promise = require('bluebird');
+const path = require('path');
+const { createFilePath } = require('gatsby-source-filesystem');
+const createPaginatedPages = require('gatsby-paginate');
+const userConfig = require('./config');
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
@@ -23,6 +24,17 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                   frontmatter {
                     title
                     date(formatString: "MMMM D, YYYY")
+                    featuredImage {
+                      childImageSharp {
+                        sizes(maxWidth: 850) {
+                          base64
+                          aspectRatio
+                          src
+                          srcSet
+                          sizes
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -46,7 +58,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             edges: result.data.allMarkdownRemark.edges,
             createPage: createPage,
             pageTemplate: "src/templates/index.js",
-            pageLength: 2,
+            pageLength: userConfig.postsPerPage,
           });
 
           createPage({

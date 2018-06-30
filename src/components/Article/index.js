@@ -1,16 +1,17 @@
 import styled from 'styled-components';
+import userConfig from '../../../config';
 
 const Article = styled.article`
   color: #65738c;
   font-size: 15px;
   
   a {
-    color: #3b62ed;
+    color: ${userConfig.primaryColor};
     font-weight: 700;
     text-decoration: none;
     
     &:hover {
-      color: #1d3793;
+      text-decoration: underline;
     }
   }
 
