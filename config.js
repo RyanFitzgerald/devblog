@@ -4,6 +4,7 @@ module.exports = {
   tagline: 'Full-stack Web Developer',
   primaryColor: '#3498db', // Required
   showHeaderImage: true, // Required
+  showShareButtons: true,
   postsPerPage: 5, // Required
   social: {
     website: 'https://ryanfitzgerald.ca',
