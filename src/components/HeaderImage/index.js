@@ -8,7 +8,7 @@ function HeaderImage() {
   return (
     <Wrapper>
       <Link to="/">
-        <img src={withPrefix('main.jpg')}/>
+        <img src="main.jpg" />
       </Link>
     </Wrapper>
   );

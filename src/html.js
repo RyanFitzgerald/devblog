@@ -13,7 +13,7 @@ module.exports = class HTML extends React.Component {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           {this.props.headComponents}
-          <link rel="shortcut icon" href={withPrefix('favicon.ico')} />
+          <link rel="shortcut icon" href="favicon.ico" />
           <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"/>
         </head>
         <body {...this.props.bodyAttributes}>
