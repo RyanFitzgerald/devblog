@@ -1,4 +1,5 @@
 import React from 'react';
+import 'prismjs/themes/prism.css';
 import '../global-styles';
 import userConfig from '../../config';
 

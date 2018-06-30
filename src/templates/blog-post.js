@@ -1,13 +1,14 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import get from 'lodash/get';
-import 'prismjs/themes/prism.css';
+import userConfig from '../../config';
 
 import Container from '../components/Container';
 import Card from '../components/Card';
 import Article from '../components/Article';
 import ArticleHeader from '../components/ArticleHeader';
 import FeaturedImage from '../components/FeaturedImage';
+import Share from '../components/Share';
 import PageNav from '../components/PageNav';
 import Button from '../components/Button';
 
@@ -16,6 +17,7 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const author = get(this.props, 'data.site.siteMetadata.author')
     const { previous, next } = this.props.pathContext;
+
     return (
       <Container>
         <Helmet title={`${post.frontmatter.title} | ${author}`} />
@@ -31,6 +33,9 @@ class BlogPostTemplate extends React.Component {
           <Article>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </Article>
+          {userConfig.showShareButtons && (
+            <Share url={window.location.href} title={post.frontmatter.title} />
+          )}
         </Card>
         
         <PageNav>

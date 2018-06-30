@@ -41,4 +41,18 @@ injectGlobal`
       padding: 25px 100px;
     }
   }
+
+  pre[class*="language-"] {
+    background: #f5f2f0;
+  }
+
+  @media only screen and (max-width: 870px) {
+    .gatsby-highlight {
+      margin: 15px -15px;
+
+      pre[class*="language-"] {
+        padding: 25px;
+      }
+    }
+  }
 `;

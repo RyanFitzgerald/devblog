@@ -1,4 +1,5 @@
 import React from 'react';
+import userConfig from '../../../config';
 
 import Container from '../Container';
 import HeaderImage from '../HeaderImage';
@@ -14,7 +15,9 @@ function Header({ config }) {
   return (
     <Container>
       <Wrapper>
-        <HeaderImage/>
+        {userConfig.showHeaderImage && (
+          <HeaderImage/>
+        )}
         <H1><Link to="/">{author}</Link></H1>
         <P>{tagline}</P>
         {social &&
