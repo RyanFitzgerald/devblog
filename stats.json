@@ -17,16 +17,16 @@
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-templates-index-js": [
-      "component---src-templates-index-js-e950a50a3635a92e1e10.js",
-      "component---src-templates-index-js-e950a50a3635a92e1e10.js.map"
+      "component---src-templates-index-js-d5cc95834eab4dc0b71a.js",
+      "component---src-templates-index-js-d5cc95834eab4dc0b71a.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-88a3cbf73fdba37ce81e.js",
-      "component---src-templates-blog-post-js-88a3cbf73fdba37ce81e.js.map"
+      "component---src-templates-blog-post-js-5e33fabbe3235123ec60.js",
+      "component---src-templates-blog-post-js-5e33fabbe3235123ec60.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-49ce9760b97b3ea2b955.js",
-      "component---src-layouts-index-js-49ce9760b97b3ea2b955.js.map"
+      "component---src-layouts-index-js-e92f531777b3b78b1bcc.js",
+      "component---src-layouts-index-js-e92f531777b3b78b1bcc.js.map"
     ],
     "path---index": [
       "path---index-f3e081a1b9a1bdc867c4.js",
@@ -34,9 +34,7 @@
     ],
     "commons": [
       "commons-4e98a79f4e3f58fbd9e0.js",
-      "build-js-styles.css",
-      "commons-4e98a79f4e3f58fbd9e0.js.map",
-      "build-js-styles.css.map"
+      "commons-4e98a79f4e3f58fbd9e0.js.map"
     ],
     "path---2015-05-01-hello-world": [
       "path---2015-05-01-hello-world-45e70f0ebb961172367b.js",
