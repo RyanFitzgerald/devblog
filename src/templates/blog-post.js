@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
 import get from 'lodash/get';
+import 'prismjs/themes/prism.css';
 
 import Container from '../components/Container';
 import Card from '../components/Card';
