@@ -14,10 +14,36 @@ To view a live demo, [click here](https://ryanfitzgerald.github.io/devblog/).
 * Syntax highlighting via PrismJS
 
 ## Contents
-* Setup and Configuration
-  * Setup
-  * Configuration Options
-* Adding a blog post
-* Deploying
-* Changelog
-* License
+* [Setup and Configuration](#setup-and-configuration)
+  * [Setup](#setup)
+  * [Configuration](#configuration)
+* [Creating New Posts](#creating-new-posts)
+* [Deploying](#deploying)
+* [Changelog](#changelog)
+* [License](#license)
+
+## Setup and Configuration
+
+### Setup
+
+_To Do_
+
+### Configuation
+
+_To Do_
+
+## Creating New Posts
+
+_To Do_
+
+## Deploying
+
+_To Do_
+
+## Changelog
+
+_To Do_
+
+## License
+
+Licensed under MIT License. See [LICENSE.md](LICENSE.md) for more.
