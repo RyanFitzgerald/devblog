@@ -91,15 +91,36 @@ To change the default favicon, simply override the ```favicon.ico``` file in the
 
 ## Creating New Posts
 
-_To Do_
+All blog posts can be found in ```/src/pages``` and are statically built once the ```gatsby build``` command is run. To create a new post, simply create a new folder in ```/src/pages``` with the name of the url you'd like to have. For example, if you wish to have the url appear as ```myblog.com/hello-world``` you would create the folder as ```hello-world```. Once the folder is created, simply create an ```index.md``` file within it.
+
+The top of the pages must all contain the same markdown which tells Gatsby the needed information about the specific post. The basic template is:
+
+```markdown
+---
+title: New Beginnings
+date: "2018-07-01"
+featuredImage: './featured.jpg'
+---
+
+This top portion is the beginning of the post and will show up as the excerpt on the homepage.
+
+<!-- end -->
+```
+
+In the above code snippet all that is required is the **title** and the **date**. The featured image is optional and can be added by simply adding an image to the page folder you just created and referencing like the above example. The excerpt portion is optional as well and if you do not use the ```<!-- end -->``` marker, the first bit of the post will be used as the excerpt automatically.
+
+This template ships with 3 blog post examples which contain everything from code snippet usage, inserting images, using featured images and excerpts, and more.
 
 ## Deploying
 
-_To Do_
+Once you are ready to deploy the blog, you would build it via ```gatsby build``` and deploy it similarly to any other React project. GatsbyJS provides some [great documentation](https://www.gatsbyjs.org/docs/deploy-gatsby/) outlining how to deploy it with various popular static site hosts such as Netlify, Heroku, Now, etc.
+
+The easiest method for deployment is via **GitHub Pages** and this can be done by simply running ```npm run deploy``` once you're ready to go. The only configuration needed is to setup the path prefix in ```gatsby-config.js```. The default is ```pathPrefix: '/devblog'``` however this should changed to whatever the repo name you chose is. For example, if you have the blog located in ```https://github.com/YOURUSERNAME/myblog``` and want it deployed to ```https://YOURNAME.github.io/myblog``` then you would set the path prefix to ```pathPrefix: '/myblog'```.
 
 ## Changelog
 
-_To Do_
+### 1.0.0
+* Initial release
 
 ## License
 
