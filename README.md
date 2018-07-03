@@ -4,6 +4,8 @@ DevBlog is a fully customizable and extendible blog template designed for develo
 
 To view a live demo, [click here](https://ryanfitzgerald.github.io/devblog/).
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/RyanFitzgerald/devblog)
+
 ## Features
 * Fully responsive
 * Minimalistic
@@ -113,9 +115,32 @@ This template ships with 3 blog post examples which contain everything from code
 
 ## Deploying
 
-Once you are ready to deploy the blog, you would build it via ```gatsby build``` and deploy it similarly to any other React project. GatsbyJS provides some [great documentation](https://www.gatsbyjs.org/docs/deploy-gatsby/) outlining how to deploy it with various popular static site hosts such as Netlify, Heroku, Now, etc.
+Once you are ready to deploy the blog and make it live, you have a couple of options available to you.
 
-The easiest method for deployment is via **GitHub Pages** and this can be done by simply running ```npm run deploy``` once you're ready to go. The only configuration needed is to setup the path prefix in ```gatsby-config.js```. The default is ```pathPrefix: '/devblog'``` however this should changed to whatever the repo name you chose is. For example, if you have the blog located in ```https://github.com/YOURUSERNAME/myblog``` and want it deployed to ```https://YOURNAME.github.io/myblog``` then you would set the path prefix to ```pathPrefix: '/myblog'```.
+### Manual Deploy
+
+Manually deploying the blog simply requires you run a ```gatsby build``` in order to create a production build. After that, you can use any server you'd normally a React app to, such as a Digital Ocean droplet or an AWS instance. All that is required is some way to serve the static files.
+
+If you are unfamiliar with deploying React applications, there are a number of other options.
+
+### GitHub Pages
+
+In order to deploy to GitHub pages, you need to first set your path prefix in ```gatsby-config.js```. The default is ```pathPrefix: '/devblog'``` however this should be changed to whatever the repo name you chose is. For example, if you have the blog located in ```https://github.com/YOURUSERNAME/myblog``` and want it deployed to ```https://YOURUSERNAME.github.io/myblog``` then you would set the path prefix to ```pathPrefix: '/myblog'```.
+
+Next, simply run ```npm run deploy``` and your blog will be deployed.
+
+Alternatively, if you wish to deploy it to ```https://YOURUSERNAME.github.io``` (i.e. your user / organization site and not a porject site), then a couple addition changes are required. The official Gatsby documentation has them outlined well [here](https://YOURUSERNAME.github.io).
+
+### Netlify
+
+One of the easiest methods of deploying the blog would be to use [Netlify](https://www.netlify.com/). To deploy to Netlify, simply clikc the button below and follow the prompts.
+
+<!-- Markdown snippet -->
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/RyanFitzgerald/devblog)
+
+### Other
+
+The options outlined above are not the only options available to you to deploy the blog. The official Gatsby documentation goes into detail about a number of other options. In order to read more about deployment options, [click here](https://www.gatsbyjs.org/docs/deploy-gatsby).
 
 ## Changelog
 
