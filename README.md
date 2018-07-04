@@ -133,7 +133,7 @@ Alternatively, if you wish to deploy it to ```https://YOURUSERNAME.github.io``` 
 
 ### Netlify
 
-One of the easiest methods of deploying the blog would be to use [Netlify](https://www.netlify.com/). To deploy to Netlify, simply clikc the button below and follow the prompts.
+One of the easiest methods of deploying the blog would be to use [Netlify](https://www.netlify.com/). To deploy to Netlify, simply click the button below and follow the prompts.
 
 <!-- Markdown snippet -->
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/RyanFitzgerald/devblog)
