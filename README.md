@@ -36,7 +36,7 @@ The first step is to get the GatsbyJS CLI installed locally. This can be accompl
 
 When creating a new Gatsby site, the CLI allows you to specify a starter, in this case simply provide the URL for this repo. This can be accomplished by running the command ```gatsby new YOUR_BLOG_NAME https://github.com/RyanFitzgerald/devblog```
 
-#### 3. Edit or use the tempalte as needed
+#### 3. Edit or use the template as needed
 
 Now you that you are setup, you can simply use the blog or make edits as needed. For example, run ```gatsby develop``` to start up a hot-reloaded development environment availalbe at localhost:8000 or run ```gatsby build``` to build an optimized production build. For a complete list of CLI commands for Gatsby, take a look at their [documentation](https://www.gatsbyjs.org/docs/).
 
