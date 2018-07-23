@@ -25,7 +25,12 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Container>
-        <Helmet title={`${post.frontmatter.title} | ${author}`} />
+        <Helmet title={`${post.frontmatter.title} | ${author}`}>
+          <meta
+            name="description"
+            content={`${userConfig.title} | ${userConfig.tagline}`}
+          />
+        </Helmet>
         <Card>
           <ArticleHeader>
             {post.frontmatter.featuredImage && (
