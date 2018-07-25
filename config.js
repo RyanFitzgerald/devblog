@@ -10,6 +10,7 @@ module.exports = {
     website: 'https://ryanfitzgerald.ca',
     github: 'https://github.com/ryanfitzgerald',
     twitter: 'https://twitter.com/ryanafitzgerald',
-    linkedin: 'https://ca.linkedin.com/in/ryanafitzgerald'
-  }
+    linkedin: 'https://ca.linkedin.com/in/ryanafitzgerald',
+  },
+  pathPrefix: '/devblog',
 };
