@@ -55,7 +55,7 @@ module.exports = {
       options: {
         name: userConfig.title,
         short_name: userConfig.title,
-        start_url: 'https://ts-de.github.io/devblog/',
+        start_url: userConfig.siteUrl,
         background_color: '#fff',
         theme_color: userConfig.primaryColor,
         display: 'minimal-ui',
