@@ -3,13 +3,13 @@ import userConfig from '../../../config';
 
 const Article = styled.article`
   color: #65738c;
-  font-size: 15px;
-  
+  font-size: 16px;
+
   a {
     color: ${userConfig.primaryColor};
     font-weight: 700;
     text-decoration: none;
-    
+
     &:hover {
       text-decoration: underline;
     }
@@ -75,7 +75,7 @@ const Article = styled.article`
     line-height: 1.7;
     margin: 15px 0;
     padding: 0 50px 0 100px;
-    
+
     p,
     ul,
     ol {
