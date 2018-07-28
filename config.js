@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Dev Blog', // Required
   author: 'Ryan Fitzgerald', // Required
-  tagline: 'Full-stack Web Developer',
+  description: 'Full-stack Web Developer',
   primaryColor: '#3498db', // Required
   showHeaderImage: true,
   showShareButtons: true,
@@ -13,4 +13,5 @@ module.exports = {
     linkedin: 'https://ca.linkedin.com/in/ryanafitzgerald',
   },
   pathPrefix: '/devblog',
+  siteUrl: '',
 };

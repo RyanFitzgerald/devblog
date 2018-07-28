@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
+import 'prismjs/themes/prism.css';
+import '../global-styles';
+
 import userConfig from '../../config';
 
 import Card from '../components/Card';
@@ -13,10 +16,13 @@ const IndexPage = ({ pathContext }) => {
   const nextUrl = (index + 1).toString();
   return (
     <Container>
-      <Helmet title={`${userConfig.title} | ${userConfig.author}`}>
+      <Helmet
+        title={`${userConfig.title} | ${userConfig.author}`}
+        htmlAttributes={{ lang: 'en' }}
+      >
         <meta
           name="description"
-          content={`${userConfig.title} | ${userConfig.tagline}`}
+          content={`${userConfig.title} | ${userConfig.description}`}
         />
       </Helmet>
       {group.map(({ node }) => (

@@ -1,11 +1,13 @@
 const userConfig = require('./config');
 
 module.exports = {
-  pathPrefix: `/devblog`,
   siteMetadata: {
     title: userConfig.title,
     author: userConfig.author,
+    description: userConfig.description,
+    siteUrl: userConfig.siteUrl,
   },
+  pathPrefix: userConfig.pathPrefix,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -44,11 +46,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: TRACKING ID HERE,
+        //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -58,8 +59,10 @@ module.exports = {
         background_color: '#fff',
         theme_color: userConfig.primaryColor,
         display: 'minimal-ui',
-        icon: 'src/main.jpg', // This path is relative to the root of the site.
+        icon: 'src/main.jpg',
       },
     },
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
   ],
 };

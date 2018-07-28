@@ -2,10 +2,10 @@ import React from 'react';
 
 import favicon from './favicon.ico';
 
-module.exports = class HTML extends React.Component {
+export default class HTML extends React.Component {
   render() {
     return (
-      <html lang="en" {...this.props.htmlAttributes}>
+      <html {...this.props.htmlAttributes}>
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -28,4 +28,4 @@ module.exports = class HTML extends React.Component {
       </html>
     );
   }
-};
+}
