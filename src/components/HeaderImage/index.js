@@ -1,5 +1,5 @@
 import React from 'react';
-import Link, { withPrefix } from 'gatsby-link';
+import Link from 'gatsby-link';
 
 import Wrapper from './Wrapper';
 import imgSrc from '../../main.jpg';
