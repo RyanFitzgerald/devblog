@@ -6,8 +6,8 @@ import Wrapper from './Wrapper';
 function FeaturedImage({ sizes }) {
   return (
     <Wrapper>
-      <Img sizes={sizes}/>
-    </Wrapper>  
+      <Img sizes={sizes} alt="" />
+    </Wrapper>
   );
 }
 

@@ -1,8 +1,10 @@
 import { injectGlobal } from 'styled-components';
 import styledNormalize from 'styled-normalize';
- 
+
 injectGlobal`
   ${styledNormalize}
+  
+  @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
   
   *,
   *:before,
@@ -43,8 +45,8 @@ injectGlobal`
   }
 
   pre[class*="language-"] {
-    background: #f5f2f0;
-  }
+    background: rgba(245, 245, 245, 1);
+    color: rgb(65, 76, 94);  }
 
   @media only screen and (max-width: 870px) {
     .gatsby-highlight {
