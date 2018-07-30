@@ -1,22 +1,33 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import Helmet from 'react-helmet';
+import 'prismjs/themes/prism.css';
+import '../global-styles';
+
 import userConfig from '../../config';
 
 import Card from '../components/Card';
 import Container from '../components/Container';
 import Summary from '../components/Summary';
 import Pagination from '../components/Pagination';
- 
+
 const IndexPage = ({ pathContext }) => {
   const { group, index, pageCount } = pathContext;
-  const previousUrl = index - 1 == 1 ? "" : (index - 1).toString();
+  const previousUrl = index - 1 == 1 ? '' : (index - 1).toString();
   const nextUrl = (index + 1).toString();
   return (
     <Container>
-      <Helmet title={`${userConfig.title} | ${userConfig.author}`} />
+      <Helmet
+        title={`${userConfig.title} | ${userConfig.author}`}
+        htmlAttributes={{ lang: 'en' }}
+      >
+        <meta
+          name="description"
+          content={`${userConfig.title} | ${userConfig.description}`}
+        />
+      </Helmet>
       {group.map(({ node }) => (
         <Card key={node.fields.slug}>
-          <Summary 
+          <Summary
             date={node.frontmatter.date}
             title={node.frontmatter.title}
             excerpt={node.excerpt}
@@ -25,7 +36,7 @@ const IndexPage = ({ pathContext }) => {
           />
         </Card>
       ))}
-      <Pagination 
+      <Pagination
         isFirst={index === 1}
         isLast={index === pageCount}
         nextUrl={nextUrl}

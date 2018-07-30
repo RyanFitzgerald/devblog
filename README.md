@@ -49,10 +49,10 @@ Alternatively, if you wish to simply fork this repo or clone it, then you simply
 Basic configuration can be done via the ```config.js``` file in the root of the project repo. Through this file you can make edits to the primary color of the blog, add a blog author and description, and more. The defaults are as follows:
 
 ```javascript
-module.exports = {
+export default {
   title: 'Dev Blog', // Required
   author: 'Ryan Fitzgerald', // Required
-  tagline: 'Full-stack Web Developer',
+  description: 'Full-stack Web Developer',
   primaryColor: '#3498db', // Required
   showHeaderImage: true,
   showShareButtons: true,
@@ -76,7 +76,7 @@ The configuration variables referenced above are used as follows:
 |----------|--------------------|
 | title | The title of the blog. This is used for the page title primarily. |
 | author | The author of the blog. This is used for the header name and page title. |
-| tagline | The tagline of the author. This is used for the header under the author. |
+| description | The description of the author. This is used for the header under the author. |
 | primaryColor | The primary color of the blog. |
 | showHeaderImage | Flag to show the header image or not. |
 | showShareButtons  | Flag to show social media share buttons on each blog post or not. |

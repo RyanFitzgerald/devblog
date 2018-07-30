@@ -17,7 +17,7 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark;
     const author = get(this.props, 'data.site.siteMetadata.author');
     const { previous, next } = this.props.pathContext;
-   
+
     let url = '';
     if (typeof window !== `undefined`) {
       url = window.location.href;
@@ -25,15 +25,25 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Container>
-        <Helmet title={`${post.frontmatter.title} | ${author}`} />
+        <Helmet
+          title={`${post.frontmatter.title} | ${author}`}
+          htmlAttributes={{ lang: 'en' }}
+        >
+          <meta
+            name="description"
+            content={`${userConfig.title} | ${userConfig.description}`}
+          />
+        </Helmet>
         <Card>
           <ArticleHeader>
-            {post.frontmatter.featuredImage &&
-              <FeaturedImage sizes={post.frontmatter.featuredImage.childImageSharp.sizes}/>
-            }
+            {post.frontmatter.featuredImage && (
+              <FeaturedImage
+                sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
+              />
+            )}
             <h1>{post.frontmatter.title}</h1>
             <p>{post.frontmatter.date}</p>
-            <span></span>
+            <span />
           </ArticleHeader>
           <Article>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -42,7 +52,7 @@ class BlogPostTemplate extends React.Component {
             <Share url={url} title={post.frontmatter.title} />
           )}
         </Card>
-        
+
         <PageNav>
           {previous && (
             <Button to={previous.fields.slug} rel="prev">
@@ -55,13 +65,13 @@ class BlogPostTemplate extends React.Component {
               {next.frontmatter.title} →
             </Button>
           )}
-        </PageNav>     
+        </PageNav>
       </Container>
-    )
+    );
   }
 }
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -78,7 +88,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         featuredImage {
-          childImageSharp{
+          childImageSharp {
             sizes(maxWidth: 850) {
               ...GatsbyImageSharpSizes
             }
@@ -87,4 +97,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
