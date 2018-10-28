@@ -1,24 +1,26 @@
-import React from 'react';
+import {graphql} from 'gatsby';
 import Helmet from 'react-helmet';
 import get from 'lodash/get';
+import React from 'react';
+
 import userConfig from '../../config';
 
 import Layout from './layout';
 
-import Container from '../components/Container';
-import Card from '../components/Card';
 import Article from '../components/Article';
 import ArticleHeader from '../components/ArticleHeader';
-import FeaturedImage from '../components/FeaturedImage';
-import Share from '../components/Share';
-import PageNav from '../components/PageNav';
 import Button from '../components/Button';
+import Card from '../components/Card';
+import Container from '../components/Container';
+import FeaturedImage from '../components/FeaturedImage';
+import PageNav from '../components/PageNav';
+import Share from '../components/Share';
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const author = get(this.props, 'data.site.siteMetadata.author');
-    const { previous, next } = this.props.pathContext;
+    const { previous, next } = this.props.pageContext;
 
     let url = '';
     if (typeof window !== `undefined`) {

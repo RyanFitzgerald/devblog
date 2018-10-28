@@ -147,6 +147,10 @@ The options outlined above are not the only options available to you to deploy t
 ### 1.0.0
 * Initial release
 
+### 2.0.0
+* Upgrade to Gatsby 2.0.31 (Big thanks to @ttristan for the help)
+* Remove deprecated functions
+
 ## License
 
 Licensed under MIT License. See [LICENSE.md](LICENSE.md) for more.
