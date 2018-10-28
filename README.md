@@ -148,7 +148,7 @@ The options outlined above are not the only options available to you to deploy t
 * Initial release
 
 ### 2.0.0
-* Upgrade to Gatsby 2.0.31 (Big thanks to @ttristan for the help)
+* Upgrade to Gatsby 2.0.31 (Big thanks to [ttristan](https://github.com/ttristan) for the help)
 * Remove deprecated functions
 
 ## License
