@@ -7,20 +7,14 @@ import Header from '../components/Header';
 
 class Template extends React.Component {
   render() {
-    const { location, children } = this.props
+    const { children } = this.props;
     return (
       <div>
-        <Header config={userConfig}/>
-        {children()}
+        <Header config={userConfig} />
+        {children}
       </div>
-    )
+    );
   }
 }
 
-Template.propTypes = {
-  children: React.PropTypes.func,
-  location: React.PropTypes.object,
-  route: React.PropTypes.object,
-}
-
-export default Template
+export default Template;
