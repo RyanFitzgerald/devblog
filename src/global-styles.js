@@ -1,7 +1,7 @@
-import { injectGlobal } from 'styled-components';
-import styledNormalize from 'styled-normalize';
+import { createGlobalStyle } from "styled-components";
+import styledNormalize from "styled-normalize";
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
   
   @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
@@ -58,3 +58,4 @@ injectGlobal`
     }
   }
 `;
+export default GlobalStyle;
