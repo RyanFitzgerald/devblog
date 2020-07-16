@@ -38,7 +38,7 @@ When creating a new Gatsby site, the CLI allows you to specify a starter, in thi
 
 #### 3. Edit or use the template as needed
 
-Now you that you are setup, you can simply use the blog or make edits as needed. For example, run ```gatsby develop``` to start up a hot-reloaded development environment availalbe at localhost:8000 or run ```gatsby build``` to build an optimized production build. For a complete list of CLI commands for Gatsby, take a look at their [documentation](https://www.gatsbyjs.org/docs/).
+Now you that you are setup, you can simply use the blog or make edits as needed. For example, run ```gatsby develop``` to start up a hot-reloaded development environment available at localhost:8000 or run ```gatsby build``` to build an optimized production build. For a complete list of CLI commands for Gatsby, take a look at their [documentation](https://www.gatsbyjs.org/docs/).
 
 #### Alternative Setup
 
@@ -81,7 +81,7 @@ The configuration variables referenced above are used as follows:
 | showHeaderImage | Flag to show the header image or not. |
 | showShareButtons  | Flag to show social media share buttons on each blog post or not. |
 | postsPerPage | The number of posts per page on the blog homepage. This is used for pagination. |
-| social | Social media profiles of the blog author. Currently only personal website, Github, Twitter, and LinkedIn are supported.|
+| social | Social media profiles of the blog author. Currently only personal website, GitHub, Twitter, and LinkedIn are supported.|
 
 #### Changing the main header image
 
@@ -129,7 +129,7 @@ In order to deploy to GitHub pages, you need to first set your path prefix in ``
 
 Next, simply run ```npm run deploy``` and your blog will be deployed.
 
-Alternatively, if you wish to deploy it to ```https://YOURUSERNAME.github.io``` (i.e. your user / organization site and not a porject site), then a couple addition changes are required. The official Gatsby documentation has them outlined well [here](https://YOURUSERNAME.github.io).
+Alternatively, if you wish to deploy it to ```https://YOURUSERNAME.github.io``` (i.e. your user / organization site and not a project site), then a couple addition changes are required. The official Gatsby documentation has them outlined well [here](https://YOURUSERNAME.github.io).
 
 ### Netlify
 
