@@ -5,6 +5,19 @@ const { createFilePath } = require('gatsby-source-filesystem');
 const createPaginatedPages = require('gatsby-paginate');
 const userConfig = require('./config');
 
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions;
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const value = createFilePath({ node, getNode });
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    });
+  }
+};
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
@@ -63,6 +76,7 @@ exports.createPages = ({ graphql, actions }) => {
             createPage: createPage,
             pageTemplate: 'src/templates/index.js',
             pageLength: userConfig.postsPerPage,
+            pathPrefix: userConfig.pathPrefix ? userConfig.pathPrefix : '/'
           });
 
           createPage({
@@ -78,17 +92,4 @@ exports.createPages = ({ graphql, actions }) => {
       }),
     );
   });
-};
-
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
-
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode });
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    });
-  }
 };
