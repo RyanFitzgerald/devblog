@@ -3,10 +3,11 @@ import Img from 'gatsby-image';
 
 import Wrapper from './Wrapper';
 
-function FeaturedImage({ sizes }) {
+function FeaturedImage({ image }) {
   return (
     <Wrapper>
-      <Img sizes={sizes} alt="" />
+      {image?.childImageSharp?.fixed && <Img fixed={image.childImageSharp.fixed} alt="" />}
+      {image?.childImageSharp?.fluid && <Img fluid={image.childImageSharp.fluid} alt="" />}
     </Wrapper>
   );
 }
