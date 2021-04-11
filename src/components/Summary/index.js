@@ -13,7 +13,7 @@ function Summary({date, title, excerpt, slug, image}) {
     <Wrapper>
         {image &&
           <Link to={slug}>
-            <FeaturedImage sizes={image.childImageSharp.sizes}/>
+          <FeaturedImage image={image} />
           </Link>
         }
         <H1><Link to={slug}>{title}</Link></H1>
