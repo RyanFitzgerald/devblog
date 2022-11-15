@@ -129,7 +129,7 @@ In order to deploy to GitHub pages, you need to first set your path prefix in ``
 
 Next, simply run ```npm run deploy``` and your blog will be deployed.
 
-Alternatively, if you wish to deploy it to ```https://YOURUSERNAME.github.io``` (i.e. your user / organization site and not a project site), then a couple addition changes are required. The official Gatsby documentation has them outlined well [here](https://YOURUSERNAME.github.io).
+Alternatively, if you wish to deploy it to ```https://YOURUSERNAME.github.io``` (i.e. your user / organization site and not a project site), then a couple addition changes are required. The official Gatsby documentation has them outlined well [here]([https://YOURUSERNAME.github.io](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/)).
 
 ### Netlify
 
